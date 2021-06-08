@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>419</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1888</width>
+    <height>1888</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Task Manager</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="2" column="2">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="0" rowspan="6" colspan="2">
+       <widget class="QTableView" name="tableView"/>
+      </item>
+      <item row="4" column="3">
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>Save as CSV</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Add</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="text">
+         <string>Delete</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string>Load from file</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QPushButton" name="pushButton_7">
+        <property name="text">
+         <string>Enter current date</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QListView" name="listView"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="text">
+         <string>Change Status</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="3">
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="text">
+         <string>How to sort?</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="pushButton_8">
+        <property name="text">
+         <string>Delegate</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionAdd">
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onLoadButtonPushed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>762</x>
+     <y>153</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>851</x>
+     <y>181</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onSaveButtonPushed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>693</x>
+     <y>188</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>826</x>
+     <y>206</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onAddButtonPushed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>112</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>810</x>
+     <y>257</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onDeleteButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>598</x>
+     <y>58</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>878</x>
+     <y>71</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onChangeButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>535</x>
+     <y>101</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>808</x>
+     <y>244</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onCurrentDatePushed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>700</x>
+     <y>123</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>874</x>
+     <y>44</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onSortInfoPushed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>733</x>
+     <y>251</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>914</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onDelegatePushed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>594</x>
+     <y>94</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>826</x>
+     <y>67</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onLoadButtonPushed()</slot>
+  <slot>onSaveButtonPushed()</slot>
+  <slot>onAddButtonPushed()</slot>
+  <slot>onDeleteButtonClicked()</slot>
+  <slot>onEditButtonClicked()</slot>
+  <slot>onChangeButtonClicked()</slot>
+  <slot>onTableViewClicked(QModelIndex)</slot>
+  <slot>onCurrentDatePushed()</slot>
+  <slot>onSortInfoPushed()</slot>
+  <slot>onDelegatePushed()</slot>
+ </slots>
+</ui>
