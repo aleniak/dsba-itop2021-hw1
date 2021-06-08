@@ -1,0 +1,19 @@
+ID_task ;Surname ;Position ;Description;Deadline;Status
+1;Ivanov;Programmer;Big HW;2021-06-06;In progress
+2;Kozlov;Physicist;Physics app;2021-08-18;In progress
+3;Zaytseva;HR;Find new programmer;2021-06-08;In progress
+4;Arbuzova;Analyst;Future plans;2021-07-10;In progress
+5;Lobanova;PR;Instagram post;2021-10-10;In progress
+6;Kuzina;Researcher;Places of interest;2021-06-11;In progress
+7;Gringauz;Sales manager;Earn million dollars;2021-02-27;Not completed
+8;Kotlyarenko;Logistics;Find will to live;2021-06-11;In progress
+9;Swotnev;Logistics;Find a new plane;2021-09-14;In progress
+10;Belyaeva;Logistics;Find a new car;2021-11-13;In progress
+11;Voronin;Accountant;Report;2021-07-16;In progress
+12;Hudoyan;Photographer;New album cover;2021-05-16;Completed
+13;Gasimov;Architect ;New building;2021-06-18;In progress
+14;Trotsky;PR;Facebook post;2021-09-22;In progress
+15;Timofeev;Translator;Translate a book;2021-07-20;In progress
+16;Gringauz;Sales manager;Earn billion dollars;2021-11-02;In progress
+17;Laletin;Logistics;Get an education;2022-09-29;In progress
+18;Chibrin;Media;Photoes;2021-07-07;In progress
