@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>currentDate</class>
+ <widget class="QDialog" name="currentDate">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>267</width>
+    <height>146</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Today is?</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="3" column="0">
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>Enter</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Current Date</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QDateEdit" name="dateEdit"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>currentDate</receiver>
+   <slot>onEdit_Pushed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>81</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>839</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>currentDate</receiver>
+   <slot>onCancel_Pushed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>146</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>873</x>
+     <y>203</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>get_today(QDate)</slot>
+  <slot>onCancel_Pushed()</slot>
+  <slot>onEdit_Pushed()</slot>
+  <slot>slot1()</slot>
+ </slots>
+</ui>
