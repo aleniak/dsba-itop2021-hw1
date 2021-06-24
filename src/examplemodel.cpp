@@ -60,6 +60,26 @@ QVariant ExampleModel::data(const QModelIndex &index, int role) const
 
         return exampleData.at(row).at(column);
     }
+    
+    //extra task after defence!!!
+    if(role == Qt::BackgroundRole)
+    {
+        if((exampleData.at(index.row()).at(index.column()) == "Not completed") && (index.column() == 5) or (exampleData.at(index.row()).at(index.column()) == "Not Completed") && (index.column() == 5))
+        {
+            QColor color_red(205, 92, 92);
+            return QBrush(color_red);
+        }
+        if((exampleData.at(index.row()).at(index.column()) == "Completed") && (index.column() == 5))
+        {
+            QColor color_green(152, 251, 152);
+            return QBrush(color_green);
+        }
+        if((exampleData.at(index.row()).at(index.column()) == "In progress") && (index.column() == 5))
+        {
+            QColor color_blue(224, 255, 255);
+            return QBrush(color_blue);
+        }
+        
     return QVariant();
 }
 
